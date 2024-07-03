@@ -5,7 +5,7 @@
 
 ## Quality Settings
 
-以下の表は、JPEG品質設定に対応するAVIFおよびWebPの品質設定を示しています：
+以下の表は、JPEG品質設定に対応するAVIFおよびWebPの品質設定を示しています。
 
 | Quality Level  | JPEG Quality | AVIF Quality | WebP Quality |
 | -------------- | ------------ | ------------ | ------------ |

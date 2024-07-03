@@ -84,7 +84,7 @@ fs.readdir(inputDir, (err, files) => {
           });
 
         sharp(inputFilePath)
-          .toFormat('jpeg', { quality: jpeg })
+          .toFormat('jpeg', { quality: jpeg, mozjpeg: true })
           .toFile(outputFilePathJpeg)
           .then(() => {
             console.log(`Processed JPEG: ${file}`);
