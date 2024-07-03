@@ -1,3 +1,53 @@
+# Image Processing with Sharp
+
+このプロジェクトは、ディレクトリ内の画像をAVIFおよびWebP形式に変換するためのスクリプトを提供します。品質設定に応じて、画像の圧縮率を調整できます。
+
+## Quality Settings
+
+以下の表は、JPEG品質設定に対応するAVIFおよびWebPの品質設定を示しています：
+
+| Quality Level  | JPEG Quality | AVIF Quality | WebP Quality |
+| -------------- | ------------ | ------------ | ------------ |
+| High           | 80           | 64           | 82           |
+| Medium-High    | 70           | 56           | 72           |
+| Medium-Low     | 60           | 51           | 64           |
+| Low            | 50           | 48           | 55           |
+
+### 参考サイト
+[AVIF and WebP encoding quality settings](https://www.industrialempathy.com/posts/avif-webp-quality-settings/)
+
+## Usage
+
+以下のコマンドを使用して、画像の品質設定を選択できます：
+
+```sh
+npm run high            # 高品質
+npm run medium-high     # 中高品質
+npm run medium-low      # 中低品質
+npm run low             # 低品質
+npm run conversion-webp # 最高品質でWebPに変換
+npm run conversion-avif # 最高品質でAVIFに変換
+```
+
+各コマンドは、対応する品質設定を適用して、`./input`ディレクトリ内の画像を変換し、`./output`ディレクトリに保存します。
+
+## Installation
+
+依存関係をインストールするには、以下のコマンドを実行します：
+
+```sh
+npm install
+```
+
+
+
+----
+----
+----
+以下、```sharp```の```README.md```を転載
+----
+
+
 # sharp
 
 <img src="https://cdn.jsdelivr.net/gh/lovell/sharp@main/docs/image/sharp-logo.svg" width="160" height="160" alt="sharp logo" align="right">
@@ -99,50 +149,3 @@ Apache License, Version 2.0（「ライセンス」）の下でライセンス�
 
 適用法または書面によって要求されない限り、ソフトウェアは「現状のまま」提供され、保証や条件は一切ないものとします。
 ライセンスの下での特定の言語に基づく権利と制限については、ライセンスを参照してください。
-
-
-----
-----
-----
-
-
-# Image Processing with Sharp
-
-このプロジェクトは、ディレクトリ内の画像をAVIFおよびWebP形式に変換するためのスクリプトを提供します。品質設定に応じて、画像の圧縮率を調整できます。
-
-## Quality Settings
-
-以下の表は、JPEG品質設定に対応するAVIFおよびWebPの品質設定を示しています：
-
-| Quality Level  | JPEG Quality | AVIF Quality | WebP Quality |
-| -------------- | ------------ | ------------ | ------------ |
-| High           | 80           | 64           | 82           |
-| Medium-High    | 70           | 56           | 72           |
-| Medium-Low     | 60           | 51           | 64           |
-| Low            | 50           | 48           | 55           |
-
-### 参考サイト
-[AVIF and WebP encoding quality settings](https://www.industrialempathy.com/posts/avif-webp-quality-settings/)
-
-## Usage
-
-以下のコマンドを使用して、画像の品質設定を選択できます：
-
-```sh
-npm run high            # 高品質
-npm run medium-high     # 中高品質
-npm run medium-low      # 中低品質
-npm run low             # 低品質
-npm run conversion-webp # 最高品質でWebPに変換
-npm run conversion-avif # 最高品質でAVIFに変換
-```
-
-各コマンドは、対応する品質設定を適用して、`./input`ディレクトリ内の画像を変換し、`./output`ディレクトリに保存します。
-
-## Installation
-
-依存関係をインストールするには、以下のコマンドを実行します：
-
-```sh
-npm install
-```

@@ -1,0 +1,20 @@
+{
+  "name": "image-processing",
+  "version": "1.0.0",
+  "main": "process-images.js",
+  "scripts": {
+    "high": "node process-images.js high",
+    "medium-high": "node process-images.js medium-high",
+    "medium-low": "node process-images.js medium-low",
+    "low": "node process-images.js low",
+    "conversion-webp": "node process-images.js conversion-webp",
+    "conversion-avif": "node process-images.js conversion-avif"
+  },
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "sharp": "^0.33.4"
+  },
+  "volta": {
+    "node": "18.18.0"
+  }
+}
