@@ -5,6 +5,18 @@ const sharp = require('sharp');
 const inputDir = './_input';
 const outputDir = './_output';
 
+// Clear command handling
+if (process.argv[2] === 'clear') {
+  fs.emptyDir(outputDir)
+    .then(() => {
+      console.log(`Output directory "${outputDir}" has been cleared.`);
+    })
+    .catch((err) => {
+      console.error(`Error clearing output directory "${outputDir}":`, err);
+    });
+  return;
+}
+
 const qualityMapping = {
   'high': { jpeg: 80, avif: 64, webp: 82 },
   'medium-high': { jpeg: 70, avif: 56, webp: 72 },

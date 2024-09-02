@@ -8,7 +8,8 @@
     "medium-low": "node process-images.js medium-low",
     "low": "node process-images.js low",
     "conversion-webp": "node process-images.js conversion-webp",
-    "conversion-avif": "node process-images.js conversion-avif"
+    "conversion-avif": "node process-images.js conversion-avif",
+    "clear": "node process-images.js clear"
   },
   "dependencies": {
     "fs-extra": "^11.2.0",

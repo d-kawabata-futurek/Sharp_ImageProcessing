@@ -9,10 +9,10 @@
 
 | Quality Level  | JPEG Quality | AVIF Quality | WebP Quality |
 | -------------- | ------------ | ------------ | ------------ |
-| High           | 80           | 64           | 82           |
-| Medium-High    | 70           | 56           | 72           |
-| Medium-Low     | 60           | 51           | 64           |
-| Low            | 50           | 48           | 55           |
+| high           | 80           | 64           | 82           |
+| medium-high    | 70           | 56           | 72           |
+| medium-low     | 60           | 51           | 64           |
+| low            | 50           | 48           | 55           |
 
 ### 参考サイト
 [AVIF and WebP encoding quality settings](https://www.industrialempathy.com/posts/avif-webp-quality-settings/)
